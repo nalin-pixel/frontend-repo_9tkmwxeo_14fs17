@@ -34,14 +34,29 @@ export default function Navbar() {
       },
       {
         root: null,
-        rootMargin: '0px 0px -60% 0px', // trigger earlier so header doesn't obscure
-        threshold: [0.25, 0.5, 0.75, 1],
+        // Trigger highlight earlier and keep room for fixed header
+        rootMargin: '0px 0px -60% 0px',
+        threshold: [0.15, 0.3, 0.5, 0.75, 1],
       }
     )
 
     sections.forEach((sec) => observer.observe(sec))
 
-    return () => observer.disconnect()
+    // Ensure Contact highlights when reaching absolute page bottom
+    const onScroll = () => {
+      const nearBottom =
+        window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2
+      if (nearBottom) {
+        setActive('contact')
+      }
+    }
+
+    window.addEventListener('scroll', onScroll, { passive: true })
+
+    return () => {
+      observer.disconnect()
+      window.removeEventListener('scroll', onScroll)
+    }
   }, [links])
 
   const handleNav = (id) => (e) => {
@@ -50,6 +65,7 @@ export default function Navbar() {
     if (el) {
       el.scrollIntoView({ behavior: 'smooth', block: 'start' })
       setOpen(false)
+      setActive(id)
     }
   }
 
