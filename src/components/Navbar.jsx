@@ -8,8 +8,8 @@ export default function Navbar() {
   const links = useMemo(
     () => [
       { id: 'projects', label: 'Projects' },
-      { id: 'experience', label: 'Experience' },
       { id: 'about', label: 'About' },
+      { id: 'experience', label: 'Experience' },
       { id: 'contact', label: 'Contact' },
     ],
     []

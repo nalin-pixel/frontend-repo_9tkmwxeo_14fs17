@@ -38,7 +38,7 @@ const experiences = [
 
 export default function Experience() {
   return (
-    <section id="experience" className="relative z-0 py-24">
+    <section id="experience" className="relative z-0 py-24 scroll-mt-24">
       <div className="mx-auto max-w-6xl px-6">
         <div className="mb-12 flex items-center gap-3">
           <div className="rounded-lg border border-emerald-500/20 bg-emerald-500/10 p-2 text-emerald-400">

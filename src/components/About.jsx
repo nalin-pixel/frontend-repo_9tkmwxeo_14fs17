@@ -47,7 +47,7 @@ const SKILL_GROUPS = [
 
 export default function About() {
   return (
-    <section id="about" className="relative z-0 bg-neutral-950 py-20">
+    <section id="about" className="relative z-0 bg-neutral-950 py-20 scroll-mt-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-10 flex items-center gap-3">
           <div className="rounded-lg border border-emerald-500/20 bg-emerald-500/10 p-2 text-emerald-400">

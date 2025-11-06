@@ -12,6 +12,7 @@ function App() {
       <main>
         <Hero />
         <Projects />
+        {/* Swap order: About before Experience */}
         <About />
         <Experience />
         <Contact />

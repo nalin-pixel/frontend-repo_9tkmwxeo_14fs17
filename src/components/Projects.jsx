@@ -18,7 +18,7 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="bg-neutral-950 py-20">
+    <section id="projects" className="bg-neutral-950 py-20 scroll-mt-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold text-white">Selected Work</h2>
         <p className="mt-2 text-neutral-300">A few projects that showcase my focus on usability, performance, and craft.</p>
