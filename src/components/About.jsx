@@ -5,15 +5,15 @@ export default function About() {
     // Programming Languages
     'Python', 'C#', 'C++', 'Java', 'SQL',
     // AI/ML & Data Science
-    'Generative AI', 'NLP', 'Deep Learning', 'Scikit-learn', 'PyTorch', 'TensorFlow',
+    'Generative AI', 'NLP', 'Deep Learning', 'scikit-learn', 'PyTorch', 'TensorFlow',
     // Software Development
     'Data Structures & Algorithms', 'Object-Oriented Programming', 'RESTful APIs', 'Microservices', 'Design Patterns', 'System Design',
     // Testing & Quality Engineering
-    'Selenium', 'PyTest', 'JUnit', 'TestNG', 'Postman', 'Unit Testing', 'Integration Testing', 'Performance Testing', 'Test Coverage Analysis', 'CI/CD', 'Azure DevOps',
+    'Selenium', 'pytest', 'JUnit', 'TestNG', 'Postman', 'Unit Testing', 'Integration Testing', 'Performance Testing', 'Test Coverage Analysis', 'CI/CD Integration (Azure DevOps)',
     // Cloud & DevOps
-    'Azure AI Services', 'Azure', 'Model Deployment', 'Azure CI/CD',
+    'Azure AI Services', 'Microsoft Azure', 'Model Deployment', 'Azure Pipelines (CI/CD)',
     // Version Control & Collaboration
-    'GitBash', 'GitHub'
+    'Git Bash', 'GitHub'
   ]
 
   return (
@@ -29,19 +29,15 @@ export default function About() {
           </div>
         </div>
 
-        <div className="grid gap-8 lg:grid-cols-3">
-          <div className="lg:col-span-2">
-            <div className="rounded-xl border border-white/10 bg-neutral-900/60 p-6 backdrop-blur supports-[backdrop-filter]:bg-neutral-900/50">
-              <p className="text-neutral-200">
-                I’m a product‑minded engineer who loves crafting fast, accessible interfaces and the services that power them. I balance design sensibility with engineering rigor to ship work that feels polished and purposeful.
-              </p>
-              <p className="mt-4 text-neutral-300">
-                My toolkit centers around React on the frontend and Python/Node on the backend. I enjoy building end‑to‑end features, tightening feedback loops, and leaving teams with systems that are a joy to maintain.
-              </p>
-            </div>
-          </div>
+        <div className="rounded-xl border border-white/10 bg-neutral-900/60 p-6 backdrop-blur supports-[backdrop-filter]:bg-neutral-900/50">
+          <p className="text-neutral-200">
+            I’m a product‑minded engineer who loves crafting fast, accessible interfaces and the services that power them. I balance design sensibility with engineering rigor to ship work that feels polished and purposeful.
+          </p>
+          <p className="mt-4 text-neutral-300">
+            My toolkit spans modern frontend and backend stacks with a strong focus on AI/ML and testing excellence. I enjoy building end‑to‑end features, tightening feedback loops, and leaving teams with systems that are a joy to maintain.
+          </p>
 
-          <div className="rounded-xl border border-white/10 bg-neutral-900/60 p-6 backdrop-blur supports-[backdrop-filter]:bg-neutral-900/50">
+          <div className="mt-8">
             <div className="mb-4 flex items-center gap-2 text-neutral-200">
               <Code size={18} className="text-emerald-400" />
               <span className="font-medium">Core Skills</span>
