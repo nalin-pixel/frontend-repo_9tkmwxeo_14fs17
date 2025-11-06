@@ -2,14 +2,18 @@ import { User, Code } from 'lucide-react'
 
 export default function About() {
   const skills = [
-    'React',
-    'TypeScript',
-    'Tailwind CSS',
-    'FastAPI',
-    'Node.js',
-    'MongoDB',
-    'Framer Motion',
-    'Spline',
+    // Programming Languages
+    'Python', 'C#', 'C++', 'Java', 'SQL',
+    // AI/ML & Data Science
+    'Generative AI', 'NLP', 'Deep Learning', 'Scikit-learn', 'PyTorch', 'TensorFlow',
+    // Software Development
+    'Data Structures & Algorithms', 'Object-Oriented Programming', 'RESTful APIs', 'Microservices', 'Design Patterns', 'System Design',
+    // Testing & Quality Engineering
+    'Selenium', 'PyTest', 'JUnit', 'TestNG', 'Postman', 'Unit Testing', 'Integration Testing', 'Performance Testing', 'Test Coverage Analysis', 'CI/CD', 'Azure DevOps',
+    // Cloud & DevOps
+    'Azure AI Services', 'Azure', 'Model Deployment', 'Azure CI/CD',
+    // Version Control & Collaboration
+    'GitBash', 'GitHub'
   ]
 
   return (
